@@ -13,17 +13,31 @@
       display: flex;
       justify-content: center; /* 가로 중앙 */
       align-items: center;     /* 세로 중앙 */
-      height: 100vh;           /* 뷰포트 높이 */
-      font-size: 24px;
+      height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    div {
-        font-size: 60px;
+    .center-box {
+      text-align: center;
+    }
+    .title-text {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+    .start-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <div>터얼렸구나ㅏ!</div>
-  <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;"  onclick="location.href='game.html'">게임/설문 시작</button>
+  <div class="center-box">
+    <div class="title-text">터얼렸구나ㅏ!</div>
+    <button class="start-button" onclick="location.href='game.html'">게임/설문 시작</button>
+  </div>
 </body>
 </html>
