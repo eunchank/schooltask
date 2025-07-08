@@ -9,7 +9,7 @@
 <body>
     <img src="01 NAVER Logo_Green.png" alt="Naver Logo" class="logo" />
   <div class="login-container">
-    <form id="login-form" action="haha.html" method="get">
+    <div id="login-form">
       <div class="input-group">
         <div class="input-wrapper top">
           <input type="text" id="username" name="username" placeholder=" " required />
@@ -21,8 +21,8 @@
         </div>
       </div>
 
-      <button type="submit" id="login-button" class="login-button" disabled>로그인</button>
-    </form>
+      <button type="submit" id="login-button" class="login-button" onclick="handleLogin()" disabled>로그인</button>
+    </div>
   
 
     <div class="link-container">
