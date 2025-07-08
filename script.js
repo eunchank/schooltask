@@ -15,3 +15,15 @@ function updateButtonState() {
 
 idInput.addEventListener('input', updateButtonState);
 pwInput.addEventListener('input', updateButtonState);
+
+function handleLogin() {
+  const id = idInput.value.trim();
+  const pw = pwInput.value.trim();
+
+  if (id !== '' && pw !== '') {
+    // 로그인 시도 → URL에 정보 남기지 않고 이동
+    location.href = 'haha.html';
+  } else {
+    alert('아이디와 비밀번호를 입력하세요.');
+  }
+}
